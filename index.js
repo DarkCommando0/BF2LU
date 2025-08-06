@@ -139,18 +139,6 @@ if (!SW_CHANNEL_ID) {
   process.exit(1);
 }
 
-const roleMapping = {
-  [process.env.GUARDIAN_EMOJI_ID]: process.env.GUARDIAN_ROLEID,
-  [process.env.CONSULAR_EMOJI_ID]: process.env.CONSULAR_ROLEID,
-  [process.env.MARAUDER_EMOJI_ID]: process.env.MARAUDER_ROLEID,
-  [process.env.SENTINEL_EMOJI_ID]: process.env.SENTINEL_ROLEID,
-  [process.env.MANDALORIAN_EMOJI_ID]: process.env.MANDALORIAN_ROLEID,
-  [process.env.BALANCED_EMOJI_ID]: process.env.BALANCED_ROLEID,
-  [process.env.INQUISITOR_EMOJI_ID]: process.env.INQUISITOR_ROLEID,
-  [process.env.SORCERER_EMOJI_ID]: process.env.SORCERER_ROLEID,
-  [process.env.GREYWARDEN_EMOJI_ID]: process.env.GREYWARDEN_ROLEID
-};
-
 const supportedLanguages = [
   'ar', 'de', 'en', 'es', 'fr',
   'ja', 'ko', 'lt', 'pb', 'pl', 'pt',
@@ -1065,3 +1053,4 @@ process.on('unhandledRejection', (reason, promise) => {
 });
 
 client.login(DISCORD_TOKEN);
+
